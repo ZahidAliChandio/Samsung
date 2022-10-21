@@ -1,0 +1,51 @@
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.79rem;
+  padding: 0.8em 1.6em;
+  font-family: "SamsungOne", arial, sans-serif;
+}
+#nav-left {
+  display: flex;
+  align-items: center;
+}
+#logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#navbar-left {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.3rem;
+}
+#navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.list-item {
+  list-style: none;
+}
+.nav-item,
+.nav-icon {
+  padding: 0.5rem;
+  letter-spacing: 0.03rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 14px;
+  line-height: 0.1rem;
+}
+.nav-icon{
+    font-size: 1.3rem;
+}
+.nav-item:hover {
+  background: black;
+  color: white;
+}
+@media only screen and(min-width:480px) {
+  #nav-container {
+  }
+  #navbar {
+  }
+}

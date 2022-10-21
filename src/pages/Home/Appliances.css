@@ -1,0 +1,27 @@
+#appliance-section{
+    font-family: "SamsungOne", arial, sans-serif;
+    text-align: center;
+}
+#appliance-heading{
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+#appliances{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#appliances .list-item{
+    margin: 0 1rem;
+}
+.appliance-item{
+    padding: 0.2rem 0;
+    text-decoration: none;
+    color:black;
+}
+.appliance-item:hover{
+    color:rgb(48, 48, 48);
+}
+.appliance-item.active{
+    border-bottom: 2px solid black;
+}

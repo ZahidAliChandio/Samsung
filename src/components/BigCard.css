@@ -1,0 +1,8 @@
+#card-container{
+    width: 400px;
+    height: 400px;
+}
+.card-image{
+    width: inherit;
+    height: inherit;
+}
