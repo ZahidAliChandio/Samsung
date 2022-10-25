@@ -5,5 +5,4 @@ const SmallCard=({image,href})=>{
         </div>
     )
 }
-
 export default SmallCard;
