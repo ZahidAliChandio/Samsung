@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.79rem;
-  padding: 0.8em 1.6em;
+  padding: 1.6rem 1.6em;
   font-family: "SamsungOne", arial, sans-serif;
 }
 #nav-left {
@@ -17,17 +17,17 @@
 #navbar-left {
   display: flex;
   justify-content: space-between;
-  margin-left: 1.3rem;
+  margin-left: 4rem;
 }
 #navbar-right {
   display: flex;
   align-items: center;
   gap: 0.7rem;
 }
-.list-item {
+.nav-item {
   list-style: none;
 }
-.nav-item,
+.item-link,
 .nav-icon {
   padding: 0.5rem;
   letter-spacing: 0.03rem;
@@ -39,7 +39,7 @@
 .nav-icon{
     font-size: 1.3rem;
 }
-.nav-item:hover {
+.item-link:hover {
   background: black;
   color: white;
 }
