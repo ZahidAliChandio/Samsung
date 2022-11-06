@@ -37,6 +37,45 @@ const mobileLinks = [
       { model: "All Tablets", link: "/", batch: false },
     ],
   },
+  {
+    title: "Watches",
+    category: [
+      { model: "Dicover Watches", link: "/", batch: false },
+      { model: "Galaxy Watch", link: "/", batch: false },
+      { model: "All Watches", link: "/", batch: false },
+      { model: "Compare", link: "/", batch: false },
+    ],
+  },
+  {
+    title: "Galaxy Buds",
+    category: [
+      { model: "Discover Galaxy Buds", link: "/", batch: false },
+      { model: "Galaxy Buds2 Pro", link: "/", batch: false },
+      { model: "Galaxy Buds2", link: "/", batch: false },
+      { model: "All Galaxy Buds", link: "/", batch: false },
+      { model: "Compare", link: "/", batch: false },
+    ],
+  },
+  {
+    title: "Accessories",
+    category: [
+      { model: "Discover Accessories", link: "/", batch: false },
+      { model: "Smartphone Accessories", link: "/", batch: false },
+      { model: "All Accessories", link: "/", batch: false },
+    ],
+  },
+  {
+    title: "One UI",
+    category: [
+      { model: "One UI Overview", link: "/", batch: false },
+      { model: "Connected Experience", link: "/", batch: false },
+    ],
+  },
+  {
+    title: "Why Galaxy",
+    link: "/",
+    // category: [{ model: "" }],
+  },
 ];
 
 const tvAvLinks = [

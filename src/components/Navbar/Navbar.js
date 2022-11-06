@@ -1,4 +1,4 @@
-import { Fragment,  useState } from "react";
+import { Fragment, useState } from "react";
 import { Transition } from "react-transition-group";
 import { mobileLinks } from "../../assets/Links";
 import { tvAvLinks } from "../../assets/Links";
@@ -125,14 +125,16 @@ const Navbar = () => {
             </li>
           </ul>
         </navbar>
-        <Transition
-          in={expandNav}
-          timeout={{ enter: 500, exit: 5000 }}
-          mountOnEnter
-          unmountOnExit
-        >
-          {(state) => <DropDown item={link} setItem={setLink} hide={state} />}
-        </Transition>
+        <div className="relative">
+          <Transition
+            in={expandNav}
+            timeout={{ enter: 500, exit: 5000 }}
+            mountOnEnter
+            unmountOnExit
+          >
+            {(state) => <DropDown item={link} setItem={setLink} hide={state} />}
+          </Transition>
+        </div>
       </nav>
     </Fragment>
   );
