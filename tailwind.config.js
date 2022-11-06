@@ -6,7 +6,18 @@ module.exports = {
       auto: "auto",
       "1/2": "50%",
     },
-    extend: {},
+    extend: {
+      animation: {
+        "expand": "exapand 0.5s ease-in forwards",
+      },
+      keyframes: {
+        expand: {
+          "0%": { height: "100vh" },
+          "50%": { height: "50vh" },
+          "100%": { height: "100vh" },
+        },
+      },
+    },
   },
   plugins: [],
 };

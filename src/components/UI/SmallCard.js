@@ -13,7 +13,7 @@ const SmallCard = ({ image, title, description, textSize, textColor }) => {
         <p className="mt-2 px-12 text-xxs group-hover:-translate-y-4 group-hover:opacity-0 ease-in duration-300">
           {description}
         </p>
-        <button className="bg-black hover:bg-slate-800 text-white py-2 px-4 rounded-full text-sm translate-y-20 group-hover:-translate-y-4 ease-in duration-300">
+        <button className="bg-black hover:bg-slate-800 text-white py-2 px-4 rounded-full text-sm translate-y-16 group-hover:-translate-y-4 ease-in duration-300">
           Buy Now
         </button>
       </div>

@@ -123,9 +123,53 @@ const displays = [
     category: [{ model: "LED Singage", link: "/", batch: false }],
   },
 ];
-
+const smartThings = [
+  {
+    heading: "SmartThings",
+    title: "Work from Home",
+    category: [{ model: "" }],
+  },
+  {
+    title: "Set the Mode",
+    category: [{ model: "" }],
+  },
+  {
+    title: "App & Products",
+    category: [{ model: "SmartThings App", link: "/", batch: false }],
+  },
+];
+const shop = [
+  {
+    heading: "Shop",
+    title: "Offers",
+    category: [
+      { model: "All Offers", link: "/", batch: false },
+      { model: "Smartphones", link: "/", batch: false },
+      { model: "Wearable & Accessories", link: "/", batch: false },
+      { model: "TVs and Sound Devices", link: "/", batch: false },
+    ],
+  },
+  {
+    title: "Why buying from Samsung",
+    category: [
+      { model: "Samsung Members", link: "/", batch: false },
+      { model: "Upgrade to Galaxy", link: "/", batch: false },
+    ],
+  },
+  {
+    title: "",
+    category: [
+      { model: "My Account", link: "/", batch: false },
+      { model: "FAQs", link: "/", batch: false },
+      { model: "Terms & Conditions", link: "/", batch: false },
+      { model: "Privacy Policy" },
+    ],
+  },
+];
 export { mobileLinks };
 export { tvAvLinks };
 export { homeAppliance };
 export { it };
 export { displays };
+export { smartThings };
+export { shop };

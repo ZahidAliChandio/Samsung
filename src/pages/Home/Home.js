@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import Slider from "../../components/UI/Slider";
 import Appliances from "./Appliances";
-import Tabs from "../../components/Navbar/Tab";
 import SliderImage_1 from "../../images/bag_slider_image.jpg";
 import SliderImage_2 from "../../images/laptop_slider.jpg";
 import SliderImage_3 from "../../images/cricket.jpg";
