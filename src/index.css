@@ -44,3 +44,14 @@
 .nav-shadow {
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.9);
 }
+.text-small {
+  font-size: 0.7rem;
+}
+.px-small {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+.py-xsmall {
+  padding-top: 0.05rem;
+  padding-bottom: 0.05rem;
+}

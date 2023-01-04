@@ -72,9 +72,8 @@ const mobileLinks = [
     ],
   },
   {
-    title: "Why Galaxy",
+    model: "Why Galaxy",
     link: "/",
-    // category: [{ model: "" }],
   },
 ];
 
@@ -91,10 +90,70 @@ const tvAvLinks = [
       {
         model: "The Freestyle",
         link: "/",
-        batch: false,
+        batch: true,
       },
       {
         model: "The Primiere",
+        link: "/",
+        batch: true,
+      },
+      {
+        model: "The Frame",
+        link: "/",
+        batch: true,
+      },
+      {
+        model: "QLED",
+        link: "/",
+        batch: false,
+      },
+      {
+        model: "Neo QLED",
+        link: "/",
+        batch: false,
+      },
+      {
+        model: "TV for gaming",
+        link: "/",
+        batch: false,
+      },
+      {
+        model: "TV Buying Guide",
+        link: "/",
+        batch: false,
+      },
+      {
+        model: "Connected Living",
+        link: "/",
+        batch: false,
+      },
+    ],
+  },
+  {
+    title: "Lifestyle TVs",
+    category: [
+      {
+        model: "The Freestyle",
+        link: "/",
+        batch: true,
+      },
+      {
+        model: "The Primiere",
+        link: "/",
+        batch: true,
+      },
+      {
+        model: "The Frame",
+        link: "/",
+        batch: true,
+      },
+      {
+        model: "All Lifestyle TVs",
+        link: "/",
+        batch: false,
+      },
+      {
+        model: "Accessories",
         link: "/",
         batch: false,
       },
@@ -159,18 +218,19 @@ const it = [
 const displays = [
   {
     heading: "Displays",
-    category: [{ model: "LED Singage", link: "/", batch: false }],
+    model: "LED Singage",
+    link: "/",
   },
 ];
 const smartThings = [
   {
     heading: "SmartThings",
-    title: "Work from Home",
-    category: [{ model: "" }],
+    model: "Work from Home",
+    link: "/",
   },
   {
-    title: "Set the Mode",
-    category: [{ model: "" }],
+    model: "Set the Mode",
+    link: "/",
   },
   {
     title: "App & Products",
@@ -195,15 +255,10 @@ const shop = [
       { model: "Upgrade to Galaxy", link: "/", batch: false },
     ],
   },
-  {
-    title: "",
-    category: [
-      { model: "My Account", link: "/", batch: false },
-      { model: "FAQs", link: "/", batch: false },
-      { model: "Terms & Conditions", link: "/", batch: false },
-      { model: "Privacy Policy" },
-    ],
-  },
+  { model: "My Account", link: "/" },
+  { model: "FAQ", link: "/" },
+  { model: "Terms & Conditions", link: "/" },
+  { model: "Privacy Policy", link: "/" },
 ];
 export { mobileLinks };
 export { tvAvLinks };

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
 import { Transition } from "react-transition-group";
+import { useEffect } from "react";
 
 const DropDown = ({ item, hide }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -45,18 +46,12 @@ const DropDown = ({ item, hide }) => {
               )}
             </Transition>
           </li>
-        ) : null;
-      })}
-    </ul>
-  );
-  const subNav = activeLink ? (
-    <ul className="w-full">
-      {activeLink.map((elem, index) => {
-        return (
-          <li key={index} className="text-lg my-2">
+        ) : (
+          // If there is no title of Element then directly render its model
+          <li key={index} className="text-lg my-2 w-fit">
             <a
               href={elem.link}
-              className="py-1 border-black hover:font-bold hover:border-b-2"
+              className="relative w-inherit py-1 after:content-[''] after:w-24 after:absolute after:left-1/2 after:bottom-0 after:border-b after:border-black after:scale-0 hover:after:scale-100 after:duration-200 after:tansition-all after:-translate-x-1/2"
             >
               {elem.model}
             </a>
@@ -64,7 +59,32 @@ const DropDown = ({ item, hide }) => {
         );
       })}
     </ul>
+  );
+  const subNav = activeLink ? (
+    <ul className="w-full">
+      {activeLink.map((elem, index) => {
+        return (
+          <li key={index} className="text-lg my-2 w-fit">
+            <a
+              href={elem.link}
+              className="relative w-inherit py-1 after:content-[''] after:w-24 after:absolute after:left-1/2 after:bottom-0 after:border-b after:border-black after:scale-0 hover:after:scale-100 after:duration-200 after:tansition-all after:-translate-x-1/2"
+            >
+              {elem.model}
+            </a>
+            {elem.batch && (
+              <span className="text-center align-middle text-white bg-blue-500 py-xsmall px-small rounded-3xl text-small ml-2">
+                NEW
+              </span>
+            )}
+          </li>
+        );
+      })}
+    </ul>
   ) : null;
+  useEffect(() => {
+    setActiveIndex(0);
+    setActiveLink(item[0].category);
+  }, [item]);
   return (
     <nav
       className={`absolute left-0 top-0 w-full duration-200 z-10 px-8
@@ -80,7 +100,7 @@ const DropDown = ({ item, hide }) => {
           <h2 className="text-3xl font-bold inline-block border-b-2 border-black leading-10 my-4">
             {heading}
           </h2>
-          <div className="flex w-1/2 gap-8 align-left">
+          <div className="flex w-1/2 gap-8 text-left">
             {navbar}
             {subNav}
           </div>
